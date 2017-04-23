@@ -35,7 +35,6 @@ public class VerifyPage extends BaseClass{
 		launchApplication();
 		loginPage.loginApplication("rajeshkbit@gmail.com", "1122345");
 		String title=driver.getTitle();
-		System.out.println(" Title is "+title);
 	
 		
 		
