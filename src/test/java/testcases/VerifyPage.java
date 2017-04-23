@@ -9,40 +9,27 @@ import com.relevantcodes.extentreports.LogStatus;
 import globallibrary.BaseClass;
 import pages.LoginPage;
 
-public class VerifyPage extends BaseClass{
-	
-	
-	LoginPage loginPage=LoginPage.getLoginPage();
-	
+public class VerifyPage extends BaseClass {
+
+	LoginPage loginPage = LoginPage.getLoginPage();
+
 	@Test
-	public void verifyPageTitle(){
-		
-		
+	public void verifyPageTitle() {
+
 		launchApplication();
 		loginPage.loginApplication("rajeshkbit@gmail.com", "powerrajeshk");
-		String title=driver.getTitle();
-		System.out.println(" Title is "+title);
-	
-		
-		
-		
+		String title = driver.getTitle();
+		System.out.println(" Title is " + title);
+
 	}
-	
+
 	@Test
-	public void verifyLogin(){
-		
-		
+	public void verifyLogin() {
+
 		launchApplication();
 		loginPage.loginApplication("rajeshkbit@gmail.com", "1122345");
-		String title=driver.getTitle();
-	
-		
-		
-		
-	}
-	
+		String title = driver.getTitle();
 
-	
-	
+	}
 
 }
