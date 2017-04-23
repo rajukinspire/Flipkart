@@ -21,7 +21,7 @@ public class GlobalLibrary extends BaseClass{
 		
 		WebElement element=null;
 
-		try {
+		try { 
 			logger.log(LogStatus.INFO, "Entering the text " + textToFeed + " on " + locator);
 			element=driver.findElement(By.xpath(locator));
 			element.clear();
